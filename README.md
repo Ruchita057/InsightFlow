@@ -1,89 +1,80 @@
 # InsightFlow
 
-**Transform Data into Decisions**
+Transform Data into Decisions — a frontend-only Business Intelligence dashboard for CSV analytics.
 
-A modern, frontend-only Business Intelligence dashboard built as a portfolio project for Data Analyst / Data Science internships.
+## Description
 
-## Features
+InsightFlow is a modern, browser-based analytics app that turns any CSV into KPIs, interactive charts, data-quality reports, and rule-based smart insights. Upload your own file or use built-in demos (Retail Sales, HR Analytics, Netflix Analytics). Everything runs client-side with no backend, no signup, and no data leaving your device. Built as a portfolio project for Data Analyst and Data Science internship applications, with a premium UI inspired by Linear, Stripe, and Vercel.
 
-- **Landing page** — Hero, features, how-it-works, CTA, responsive navbar & footer
-- **CSV upload** — Drag & drop or browse (Papa Parse)
-- **Demo datasets** — Retail Sales, HR Analytics, Netflix Analytics
-- **KPI cards** — Auto-detected revenue, profit, orders, customers, etc.
-- **Interactive charts** — Line, bar, donut (Chart.js)
-- **Data quality panel** — Missing values, duplicates, column types, completeness
-- **Smart insights** — Rule-based insight cards (top categories, anomalies, trends)
-- **Data explorer** — Search, sort, paginated table
-- **Dark / light mode** — Persisted in localStorage
-- **Recent uploads** — Metadata saved in localStorage
-- **PDF export** — jsPDF report of KPIs, insights & quality
-- **Fully responsive** — Mobile-friendly sidebar & layout
-- **Premium UI** — Glassmorphism, gradients, micro-interactions (Linear / Stripe / Vercel inspired)
+## Getting Started
 
-## Tech Stack
+### Dependencies
 
-| Library     | Purpose              |
-|-------------|----------------------|
-| Papa Parse  | CSV parsing          |
-| Chart.js    | Charts               |
-| jsPDF       | PDF export           |
-| Vanilla JS  | App logic            |
-| CSS Variables | Theming            |
+* A modern web browser (Chrome, Edge, Firefox, or Safari)
+* Internet connection (Papa Parse, Chart.js, and jsPDF load from CDNs)
+* Optional: Node.js (for `npx serve`) or Python 3 (for a simple local server)
 
-No backend. No build step. Open `index.html` or serve the folder.
+### Installing
 
-## Folder Structure
+* Clone or download this repository
+* No package install required — pure HTML, CSS, and JavaScript
+* Unzip the project folder if you downloaded a ZIP
 
-```
-insightflow/
-├── index.html          # Landing page
-├── dashboard.html      # Analytics dashboard
-├── css/
-│   ├── styles.css      # Global + landing styles
-│   └── dashboard.css   # Dashboard-specific styles
-├── js/
-│   ├── main.js         # Theme, mobile nav, landing
-│   ├── utils.js        # Helpers, theme, quality, storage
-│   ├── demo-data.js    # Built-in demo generators
-│   ├── insights.js     # Rule-based insights engine
-│   └── dashboard.js    # Dashboard controller
-├── data/               # (optional) static CSVs
-└── README.md
+```bash
+git clone https://github.com/Ruchita057/insightflow.git
+cd insightflow
 ```
 
-## How to Run
+### Executing program
 
-1. Open `index.html` in a modern browser, **or**
-2. Serve locally:
+* **Option A — Open directly:** double-click `index.html`
+* **Option B — Local server (recommended):**
 
 ```bash
 npx serve .
-# or
+```
+
+or:
+
+```bash
 python -m http.server 8080
 ```
 
-Then visit `http://localhost:8080` (or the port shown).
+* Open the URL shown in the terminal (e.g. `http://localhost:3000` or `http://localhost:8080`)
+* Click **Launch App** or open `dashboard.html` — Retail demo loads automatically
+* Switch demos or upload your own CSV from the dashboard
 
-## Demo Datasets
+## Help
 
-| Dataset           | Rows | Highlights                          |
-|-------------------|------|-------------------------------------|
-| Retail Sales      | 200  | Revenue, Profit, Category, Region   |
-| HR Analytics      | 150  | Salary, Attrition, Department       |
-| Netflix Analytics | 180  | Views, Genre, IMDb, Est. Revenue    |
+* **Page shows “No data loaded yet”** — Click a demo chip (Retail / HR / Netflix) or upload a CSV. Opening the dashboard auto-loads Retail Sales.
+* **ERR_EMPTY_RESPONSE on Live Server** — Stop Live Server and use `npx serve .` or open `index.html` directly.
+* **Charts missing** — Check your internet connection; Chart.js is loaded from a CDN.
+* **CSV won’t parse** — Use a valid `.csv` with a header row. Empty files will show an error toast.
+* **Theme not saving** — Ensure the browser allows `localStorage` for that site.
 
-## Accessibility & UX
+## Authors
 
-- Semantic HTML & ARIA labels
-- Keyboard-friendly upload zone & table headers
-- Loading states & toast notifications
-- Error handling for bad CSVs
-- Respects `prefers-color-scheme` via manual toggle + persistence
+* Ruchita
+* [@Ruchita057](https://github.com/Ruchita057)
 
-## Author
+## Version History
 
-Built as a B.Sc. Computer Science portfolio project targeting Data Analyst and Data Science internships.
+* 1.0
+  * Initial portfolio release
+  * Landing page, dashboard, demos, KPIs, charts, insights, quality panel, PDF export
+  * Dark/light mode and recent-upload metadata
 
----
+* 0.1
+  * Initial development build
 
-© 2026 InsightFlow
+## License
+
+This project is licensed under the MIT License — see the LICENSE file for details.
+
+## Acknowledgments
+
+* [Papa Parse](https://www.papaparse.com/) — CSV parsing
+* [Chart.js](https://www.chartjs.org/) — charts
+* [jsPDF](https://github.com/parallax/jsPDF) — PDF export
+* UI inspiration from Linear, Stripe, and Vercel
+* [awesome-readme](https://github.com/matiassingers/awesome-readme) — README structure ideas
