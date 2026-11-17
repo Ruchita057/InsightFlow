@@ -4,7 +4,7 @@ Transform Data into Decisions — a frontend-only Business Intelligence dashboar
 
 ## Description
 
-InsightFlow is a modern, browser-based analytics app that turns any CSV into KPIs, interactive charts, data-quality reports, and rule-based smart insights. Upload your own file or use built-in demos (Retail Sales, HR Analytics, Netflix Analytics). Everything runs client-side with no backend, no signup, and no data leaving your device. Built as a portfolio project for Data Analyst and Data Science internship applications, with a premium UI inspired by Linear, Stripe, and Vercel.
+InsightFlow is a modern, browser-based analytics app that turns any CSV into KPIs, interactive charts, data-quality reports, and rule-based smart insights. Upload your own file or use built-in demos (Retail Sales, HR Analytics, Netflix Analytics). Everything runs client-side with no backend, no signup, and no data leaving your device. Built as a Data Science portfolio project with a premium UI inspired by Linear, Stripe, and Vercel.
 
 ## Getting Started
 
