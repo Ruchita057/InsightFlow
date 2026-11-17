@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="InsightFlow — Transform Data into Decisions. Modern analytics dashboard for data-driven insights." />
+  <title>InsightFlow — Transform Data into Decisions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar-inner">
+      <a href="index.html" class="logo" aria-label="InsightFlow home">
+        <span class="logo-icon">📊</span>
+        InsightFlow
+      </a>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#how-it-works">How it Works</a>
+        <a href="dashboard.html?demo=retail">Dashboard</a>
+      </div>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode" title="Toggle theme">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" id="themeIcon">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+        <a href="dashboard.html?demo=retail" class="btn btn-primary btn-sm">Launch App</a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav" role="dialog" aria-label="Mobile menu">
+    <a href="#features">Features</a>
+    <a href="#how-it-works">How it Works</a>
+    <a href="dashboard.html?demo=retail">Dashboard</a>
+    <a href="dashboard.html?demo=retail" class="btn btn-primary" style="margin-top:16px">Launch App</a>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span>✨</span> Built for analysts & data scientists
+      </div>
+      <h1 id="hero-title">
+        Transform Data into<br />
+        <span class="gradient-text">Decisions</span>
+      </h1>
+      <p class="hero-subtitle">
+        Upload any CSV and instantly unlock KPIs, interactive charts, data quality reports, and AI-style smart insights — all in your browser.
+      </p>
+      <div class="hero-ctas">
+        <a href="dashboard.html?demo=retail" class="btn btn-primary btn-lg">
+          Open Dashboard
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#features" class="btn btn-secondary btn-lg">Explore Features</a>
+      </div>
+    </div>
+
+    <!-- Dashboard Preview -->
+    <div class="hero-visual">
+      <div class="hero-dashboard-preview" aria-hidden="true">
+        <div class="preview-bar">
+          <span class="preview-dot red"></span>
+          <span class="preview-dot yellow"></span>
+          <span class="preview-dot green"></span>
+          <span style="margin-left:12px;font-size:0.75rem;color:var(--text-muted)">InsightFlow Dashboard</span>
+        </div>
+        <div class="preview-content">
+          <div class="preview-kpi">
+            <div class="preview-kpi-label">Revenue</div>
+            <div class="preview-kpi-value">$284K</div>
+            <div class="preview-kpi-change">↑ 12.4%</div>
+          </div>
+          <div class="preview-kpi">
+            <div class="preview-kpi-label">Orders</div>
+            <div class="preview-kpi-value">3,842</div>
+            <div class="preview-kpi-change">↑ 8.1%</div>
+          </div>
+          <div class="preview-kpi">
+            <div class="preview-kpi-label">Customers</div>
+            <div class="preview-kpi-value">1,256</div>
+            <div class="preview-kpi-change">↑ 5.3%</div>
+          </div>
+          <div class="preview-kpi">
+            <div class="preview-kpi-label">Profit</div>
+            <div class="preview-kpi-value">$67.2K</div>
+            <div class="preview-kpi-change">↑ 15.8%</div>
+          </div>
+          <div class="preview-charts">
+            <div class="preview-chart">
+              <div class="preview-bar-item" style="height:40%"></div>
+              <div class="preview-bar-item" style="height:65%"></div>
+              <div class="preview-bar-item" style="height:45%"></div>
+              <div class="preview-bar-item" style="height:80%"></div>
+              <div class="preview-bar-item" style="height:55%"></div>
+              <div class="preview-bar-item" style="height:90%"></div>
+              <div class="preview-bar-item" style="height:70%"></div>
+              <div class="preview-bar-item" style="height:95%"></div>
+            </div>
+            <div class="preview-chart" style="align-items:center;justify-content:center">
+              <div style="width:100px;height:100px;border-radius:50%;background:conic-gradient(#6366f1 0% 40%,#a855f7 40% 65%,#ec4899 65% 85%,#06b6d4 85% 100%)"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="section" id="features" aria-labelledby="features-title">
+    <div class="section-header">
+      <h2 id="features-title">Everything you need to analyze data</h2>
+      <p>A complete analytics toolkit that runs entirely in your browser — no backend, no signup, no waiting.</p>
+    </div>
+    <div class="features-grid">
+      <article class="feature-card">
+        <div class="feature-icon">📁</div>
+        <h3>CSV Upload & Demo Data</h3>
+        <p>Drop any CSV or pick from built-in datasets — Retail Sales, HR Analytics, and Netflix Analytics — ready to explore instantly.</p>
+      </article>
+      <article class="feature-card">
+        <div class="feature-icon">📈</div>
+        <h3>Interactive Charts</h3>
+        <p>Beautiful line, bar, and donut charts powered by Chart.js. Hover for details, resize responsively, and explore trends visually.</p>
+      </article>
+      <article class="feature-card">
+        <div class="feature-icon">🎯</div>
+        <h3>Smart KPI Cards</h3>
+        <p>Automatic detection of revenue, profit, orders, customers, and more. Key metrics surface the moment your data loads.</p>
+      </article>
+      <article class="feature-card">
+        <div class="feature-icon">🔍</div>
+        <h3>Data Quality Panel</h3>
+        <p>Instantly see missing values, duplicates, numeric vs categorical columns, and completeness scores for every dataset.</p>
+      </article>
+      <article class="feature-card">
+        <div class="feature-icon">💡</div>
+        <h3>Rule-Based Insights</h3>
+        <p>Smart insight cards highlight top categories, growth trends, anomalies, and correlations using transparent rule-based logic.</p>
+      </article>
+      <article class="feature-card">
+        <div class="feature-icon">📄</div>
+        <h3>Export to PDF</h3>
+        <p>Generate a clean PDF report of your dashboard — KPIs, charts, insights, and quality metrics — ready to share.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- How it Works -->
+  <section class="section" id="how-it-works" aria-labelledby="how-title">
+    <div class="section-header">
+      <h2 id="how-title">How it works</h2>
+      <p>From raw CSV to actionable insights in three steps.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-number">1</div>
+        <h3>Upload or Select</h3>
+        <p>Upload your own CSV or choose a demo dataset. Data is parsed locally with Papa Parse — nothing leaves your browser.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">2</div>
+        <h3>Explore & Analyze</h3>
+        <p>KPIs, charts, quality metrics, and smart insights appear automatically. Search, filter, and sort the full data table.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">3</div>
+        <h3>Decide & Share</h3>
+        <p>Export a PDF report or keep exploring. Recent uploads are saved in localStorage for quick revisit.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="cta-card">
+      <h2>Ready to turn data into decisions?</h2>
+      <p>Open the dashboard and start analyzing in seconds. No account required.</p>
+      <a href="dashboard.html?demo=retail" class="btn btn-primary btn-lg">
+        Launch InsightFlow
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <span class="logo-icon">📊</span>
+          InsightFlow
+        </a>
+        <p>Transform Data into Decisions. A modern, frontend-only analytics platform built for aspiring data analysts and scientists.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <a href="dashboard.html?demo=retail">Dashboard</a>
+        <a href="#features">Features</a>
+        <a href="#how-it-works">How it Works</a>
+      </div>
+      <div class="footer-col">
+        <h4>Datasets</h4>
+        <a href="dashboard.html?demo=retail">Retail Sales</a>
+        <a href="dashboard.html?demo=hr">HR Analytics</a>
+        <a href="dashboard.html?demo=netflix">Netflix Analytics</a>
+      </div>
+      <div class="footer-col">
+        <h4>Tech</h4>
+        <a href="https://www.papaparse.com/" target="_blank" rel="noopener">Papa Parse</a>
+        <a href="https://www.chartjs.org/" target="_blank" rel="noopener">Chart.js</a>
+        <a href="https://github.com/parallax/jsPDF" target="_blank" rel="noopener">jsPDF</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 InsightFlow. Built as a portfolio project.</span>
+      <span>Frontend-only · Privacy-first</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
